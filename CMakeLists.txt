@@ -38,12 +38,12 @@ set(CORE_SRCS
   )
 
 set(LIBRARY_SRCS
-  libraries/ArduinoOTA/src/ArduinoOTA.cpp
+  #libraries/ArduinoOTA/src/ArduinoOTA.cpp
   libraries/AsyncUDP/src/AsyncUDP.cpp
   libraries/BluetoothSerial/src/BluetoothSerial.cpp
   libraries/DNSServer/src/DNSServer.cpp
   libraries/EEPROM/src/EEPROM.cpp
-  libraries/ESPmDNS/src/ESPmDNS.cpp
+  #libraries/ESPmDNS/src/ESPmDNS.cpp
   libraries/FFat/src/FFat.cpp
   libraries/FS/src/FS.cpp
   libraries/FS/src/vfs_api.cpp
@@ -63,18 +63,18 @@ set(LIBRARY_SRCS
   libraries/WebServer/src/WebServer.cpp
   libraries/WebServer/src/Parsing.cpp
   libraries/WebServer/src/detail/mimetable.cpp
-  libraries/WiFiClientSecure/src/ssl_client.cpp
-  libraries/WiFiClientSecure/src/WiFiClientSecure.cpp
-  libraries/WiFi/src/ETH.cpp
-  libraries/WiFi/src/WiFiAP.cpp
-  libraries/WiFi/src/WiFiClient.cpp
-  libraries/WiFi/src/WiFi.cpp
-  libraries/WiFi/src/WiFiGeneric.cpp
-  libraries/WiFi/src/WiFiMulti.cpp
-  libraries/WiFi/src/WiFiScan.cpp
-  libraries/WiFi/src/WiFiServer.cpp
-  libraries/WiFi/src/WiFiSTA.cpp
-  libraries/WiFi/src/WiFiUdp.cpp
+  #libraries/WiFiClientSecure/src/ssl_client.cpp
+  #libraries/WiFiClientSecure/src/WiFiClientSecure.cpp
+  #libraries/WiFi/src/ETH.cpp
+  #libraries/WiFi/src/WiFiAP.cpp
+  #libraries/WiFi/src/WiFiClient.cpp
+  #libraries/WiFi/src/WiFi.cpp
+  #libraries/WiFi/src/WiFiGeneric.cpp
+  #libraries/WiFi/src/WiFiMulti.cpp
+  #libraries/WiFi/src/WiFiScan.cpp
+  #libraries/WiFi/src/WiFiServer.cpp
+  #libraries/WiFi/src/WiFiSTA.cpp
+  #libraries/WiFi/src/WiFiUdp.cpp
   libraries/Wire/src/Wire.cpp
   )
 
@@ -115,7 +115,7 @@ set(COMPONENT_SRCS ${CORE_SRCS} ${LIBRARY_SRCS} ${BLE_SRCS})
 set(COMPONENT_ADD_INCLUDEDIRS
   variants/esp32/
   cores/esp32/
-  libraries/ArduinoOTA/src
+  #libraries/ArduinoOTA/src
   libraries/AsyncUDP/src
   libraries/BLE/src
   libraries/BluetoothSerial/src
